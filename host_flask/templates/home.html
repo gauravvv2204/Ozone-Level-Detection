@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        {%if title%}
+        <title>
+            Ozone - {{ title }}
+        </title>
+        {%else%}
+        <title>
+            Ozone Detection
+        </title>
+        {%endif%}
+    </head>
+    <body>
+        <main role="main" class="container">
+          <div class="row bgcol">
+            <div class="col-md-12 bgcol">              
+              <form method="POST" action="">
+               {{ form.hidden_tag() }}
+               <fieldset class="form-group">
+                   <legend class="border-bottom mb-4">Predict</legend>
+                   <div class="form-group">
+                       {{ form.WSR0.label(class="form-control-label") }}
+                       {{ form.WSR0(class="form-control form-control-lg")}}
+                   </div>
+                   <div class="form-group">
+                     {{ form.WSR1.label(class="form-control-label") }}
+                     {{ form.WSR1(class="form-control form-control-lg")}}
+                  </div>
+                  <div class="form-group">
+                    {{ form.WSR2.label(class="form-control-label") }}
+                    {{ form.WSR2(class="form-control form-control-lg")}}
+                  </div>
+                  <div class="form-group">
+                    {{ form.WSR3.label(class="form-control-label") }}
+                    {{ form.WSR3(class="form-control form-control-lg")}}
+                 </div>
+                 <div class="form-group">
+                  {{ form.WSR4.label(class="form-control-label") }}
+                  {{ form.WSR4(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR5.label(class="form-control-label") }}
+                  {{ form.WSR5(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR6.label(class="form-control-label") }}
+                  {{ form.WSR6(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR7.label(class="form-control-label") }}
+                  {{ form.WSR7(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR8.label(class="form-control-label") }}
+                  {{ form.WSR8(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR9.label(class="form-control-label") }}
+                  {{ form.WSR9(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR10.label(class="form-control-label") }}
+                  {{ form.WSR10(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR11.label(class="form-control-label") }}
+                  {{ form.WSR11(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR12.label(class="form-control-label") }}
+                  {{ form.WSR12(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR13.label(class="form-control-label") }}
+                  {{ form.WSR13(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR14.label(class="form-control-label") }}
+                  {{ form.WSR14(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR15.label(class="form-control-label") }}
+                  {{ form.WSR15(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR16.label(class="form-control-label") }}
+                  {{ form.WSR16(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR17.label(class="form-control-label") }}
+                  {{ form.WSR17(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR18.label(class="form-control-label") }}
+                  {{ form.WSR18(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR19.label(class="form-control-label") }}
+                  {{ form.WSR19(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR20.label(class="form-control-label") }}
+                  {{ form.WSR20(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR21.label(class="form-control-label") }}
+                  {{ form.WSR21(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR22.label(class="form-control-label") }}
+                  {{ form.WSR22(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR23.label(class="form-control-label") }}
+                  {{ form.WSR23(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR_PK.label(class="form-control-label") }}
+                  {{ form.WSR_PK(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.WSR_AV.label(class="form-control-label") }}
+                  {{ form.WSR_AV(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T0.label(class="form-control-label") }}
+                  {{ form.T0(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T1.label(class="form-control-label") }}
+                  {{ form.T1(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T2.label(class="form-control-label") }}
+                  {{ form.T2(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T3.label(class="form-control-label") }}
+                  {{ form.T3(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T4.label(class="form-control-label") }}
+                  {{ form.T4(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T5.label(class="form-control-label") }}
+                  {{ form.T5(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T6.label(class="form-control-label") }}
+                  {{ form.T6(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T7.label(class="form-control-label") }}
+                  {{ form.T7(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T8.label(class="form-control-label") }}
+                  {{ form.T8(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T9.label(class="form-control-label") }}
+                  {{ form.T9(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T10.label(class="form-control-label") }}
+                  {{ form.T10(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T11.label(class="form-control-label") }}
+                  {{ form.T11(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T12.label(class="form-control-label") }}
+                  {{ form.T12(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T13.label(class="form-control-label") }}
+                  {{ form.T13(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T14.label(class="form-control-label") }}
+                  {{ form.T14(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T15.label(class="form-control-label") }}
+                  {{ form.T15(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T16.label(class="form-control-label") }}
+                  {{ form.T16(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T17.label(class="form-control-label") }}
+                  {{ form.T17(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T18.label(class="form-control-label") }}
+                  {{ form.T18(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T19.label(class="form-control-label") }}
+                  {{ form.T19(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T20.label(class="form-control-label") }}
+                  {{ form.T20(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T21.label(class="form-control-label") }}
+                  {{ form.T21(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T22.label(class="form-control-label") }}
+                  {{ form.T22(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T23.label(class="form-control-label") }}
+                  {{ form.T23(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T_PK.label(class="form-control-label") }}
+                  {{ form.T_PK(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T_AV.label(class="form-control-label") }}
+                  {{ form.T_AV(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T85.label(class="form-control-label") }}
+                  {{ form.T85(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.RH85.label(class="form-control-label") }}
+                  {{ form.RH85(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.U85.label(class="form-control-label") }}
+                  {{ form.U85(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.V85.label(class="form-control-label") }}
+                  {{ form.V85(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.HT85.label(class="form-control-label") }}
+                  {{ form.HT85(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T70.label(class="form-control-label") }}
+                  {{ form.T70(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.RH70.label(class="form-control-label") }}
+                  {{ form.RH70(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.U70.label(class="form-control-label") }}
+                  {{ form.U70(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.V70.label(class="form-control-label") }}
+                  {{ form.V70(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.HT70.label(class="form-control-label") }}
+                  {{ form.HT70(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.T50.label(class="form-control-label") }}
+                  {{ form.T50(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.RH50.label(class="form-control-label") }}
+                  {{ form.RH50(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.U50.label(class="form-control-label") }}
+                  {{ form.U50(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.V50.label(class="form-control-label") }}
+                  {{ form.V50(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.HT50.label(class="form-control-label") }}
+                  {{ form.HT50(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.KI.label(class="form-control-label") }}
+                  {{ form.KI(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.TT.label(class="form-control-label") }}
+                  {{ form.TT(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.SLP.label(class="form-control-label") }}
+                  {{ form.SLP(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.SLP_.label(class="form-control-label") }}
+                  {{ form.SLP_(class="form-control form-control-lg")}}
+               </div>
+<div class="form-group">
+                  {{ form.Precp.label(class="form-control-label") }}
+                  {{ form.Precp(class="form-control form-control-lg")}}
+               </div>
+               </fieldset>
+               <div class="form-group">
+                   {{ form.submit(class="btn btn-outline-info") }}
+               </div>
+           </form>
+
+
+            </div>
+          </div>
+        </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ab80f477a5.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  </body>
+</html>
