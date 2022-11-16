@@ -15,9 +15,6 @@ model = r'{}\RandomForest.sav'.format(filename)
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1, 72)
     loaded_model = pickle.load(open(model, "rb"))
-    # if(model.find("Logistic")):
-    #     pca_reload = pickle.load(open(r"{}\LogisticPCA.pkl".format(filename),'rb'))
-    #     to_predict = pca_reload.transform(to_predict)
     result = loaded_model.predict(to_predict)
     return result[0]
  
